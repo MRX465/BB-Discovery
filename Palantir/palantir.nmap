@@ -1,0 +1,638 @@
+# Nmap 7.70 scan initiated Thu Sep 12 23:22:27 2019 as: nmap -sSV -p- --open -iL palantir.txt -o palantir
+Failed to resolve "appeast.mi.palantir.com".
+Failed to resolve "flex01.palantir.com".
+Failed to resolve "helpme.palantir.com".
+Failed to resolve "media.palantir.com".
+Failed to resolve "mi.palantir.com".
+Failed to resolve "mivsp-dc.palantir.com".
+Failed to resolve "mivsp-sj.palantir.com".
+Nmap scan report for almanac.palantir.com (8.4.231.69)
+Host is up (0.085s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.16.1
+443/tcp open  ssl/http nginx 1.16.1
+
+Nmap scan report for auth.palantir.com (198.97.14.90)
+Host is up (0.019s latency).
+Not shown: 65532 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE  VERSION
+80/tcp    open  http     Microsoft IIS httpd 10.0
+443/tcp   open  ssl/http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49443/tcp open  unknown
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for blog.palantir.com (92.242.140.21)
+Host is up (0.035s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 64284 filtered ports, 1250 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Nmap scan report for can-ravpn.palantir.com (110.175.175.180)
+Host is up (0.25s latency).
+rDNS record for 110.175.175.180: 110-175-175-180.static.tpgi.com.au
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for dc-ravpn.palantir.com (198.97.14.80)
+Host is up (0.017s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for docs.palantir.com (8.4.231.73)
+Host is up (0.080s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.7.10
+443/tcp open  ssl/http nginx 1.7.10
+
+Nmap scan report for eclipse-update.palantir.com (52.216.104.147)
+Host is up (0.012s latency).
+rDNS record for 52.216.104.147: s3-1-w.amazonaws.com
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      AmazonS3
+443/tcp open  ssl/https AmazonS3
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.70%I=7%D=9/13%Time=5D7B16E1%P=x86_64-apple-darwin13.4.0%
+SF:r(GetRequest,124,"HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\nx-amz-id
+SF:-2:\x20oxwOFwVHLkpRArO2no2XXLLeJWpvzI1dQ8/a7ZKhyzPirda67A83Q0aT75Z7BSZc
+SF:nVRWKw1iXus=\r\nx-amz-request-id:\x208B03E3E544D6FAAD\r\nDate:\x20Fri,\
+SF:x2013\x20Sep\x202019\x2004:11:14\x20GMT\r\nLocation:\x20https://aws\.am
+SF:azon\.com/s3/\r\nContent-Length:\x200\r\nServer:\x20AmazonS3\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(HTTPOptions,21E,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\nx-amz-request-id:\x20C8E56775A54C33CA\r\nx-amz-id-2:\x20iIlnA
+SF:G3XAqporxRDtC/OL1HbkbcjRDWU6JuBcCzNIXKmXwvO9XTiOh3sWc/eJmk3oA2x8D8\+I\+
+SF:M=\r\nContent-Type:\x20application/xml\r\nDate:\x20Fri,\x2013\x20Sep\x2
+SF:02019\x2004:11:13\x20GMT\r\nConnection:\x20close\r\nServer:\x20AmazonS3
+SF:\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?>\n<Error><Co
+SF:de>BadRequest</Code><Message>Insufficient\x20information\.\x20Origin\x2
+SF:0request\x20header\x20needed\.</Message><RequestId>C8E56775A54C33CA</Re
+SF:questId><HostId>iIlnAG3XAqporxRDtC/OL1HbkbcjRDWU6JuBcCzNIXKmXwvO9XTiOh3
+SF:sWc/eJmk3oA2x8D8\+I\+M=</HostId></Error>")%r(RTSPRequest,26A,"HTTP/1\.1
+SF:\x20505\x20HTTP\x20Version\x20not\x20supported\r\nDate:\x20Fri,\x2013\x
+SF:20Sep\x2019\x2004:11:13\x20GMT\r\nConnection:\x20close\r\nTransfer-Enco
+SF:ding:\x20chunked\r\nx-amz-id-2:\x20vMLtRj\+iskIuYNElKLaq5LZ0UE8YwGuCOYV
+SF:41lr9QAruKHujaMHEeSU4cbo4PdnCcSjV5OsIt6e1nqgiUCP0IyQU0uTAB4re\r\nx-amz-
+SF:request-id:\x207A20F0E0F543420C\r\nContent-Type:\x20application/xml\r\n
+SF:\r\n130\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?><Error><C
+SF:ode>HttpVersionNotSupported</Code><Message>The\x20HTTP\x20version\x20sp
+SF:ecified\x20is\x20not\x20supported\.</Message><RequestId>7A20F0E0F543420
+SF:C</RequestId><HostId>vMLtRj\+iskIuYNElKLaq5LZ0UE8YwGuCOYV41lr9QAruKHuja
+SF:MHEeSU4cbo4PdnCcSjV5OsIt6e1nqgiUCP0IyQU0uTAB4re</HostId></Error>\r\n0\r
+SF:\n\r\n")%r(FourOhFourRequest,234,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nx-amz-request-id:\x20561F8A18E7020081\r\nx-amz-id-2:\x20bxCFxjGSLcLIHx
+SF:nvA9FTns1f16ExJJ0lWB4yr2zfXPTUewYtGZZZvAHW4rzbnxqKMj9hg2McTA4=\r\nConte
+SF:nt-Type:\x20application/xml\r\nDate:\x20Fri,\x2013\x20Sep\x202019\x2004
+SF::11:18\x20GMT\r\nConnection:\x20close\r\nServer:\x20AmazonS3\r\n\r\n<\?
+SF:xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?>\n<Error><Code>InvalidB
+SF:ucketName</Code><Message>The\x20specified\x20bucket\x20is\x20not\x20val
+SF:id\.</Message><BucketName>nice\x20ports,</BucketName><RequestId>561F8A1
+SF:8E7020081</RequestId><HostId>bxCFxjGSLcLIHxnvA9FTns1f16ExJJ0lWB4yr2zfXP
+SF:TUewYtGZZZvAHW4rzbnxqKMj9hg2McTA4=</HostId></Error>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.70%T=SSL%I=7%D=9/13%Time=5D7B16E7%P=x86_64-apple-darwin
+SF:13.4.0%r(GetRequest,124,"HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\nx
+SF:-amz-id-2:\x20nrDLKNzDOVRGyjLHvuzdTZ8n\+3fGxiB5HtKxa9KMiwrfJCPuziQ28Pfp
+SF:AtXKdJHW9TAeShMJh8U=\r\nx-amz-request-id:\x206518BD4232740113\r\nDate:\
+SF:x20Fri,\x2013\x20Sep\x202019\x2004:11:20\x20GMT\r\nLocation:\x20https:/
+SF:/aws\.amazon\.com/s3/\r\nContent-Length:\x200\r\nServer:\x20AmazonS3\r\
+SF:nConnection:\x20close\r\n\r\n")%r(HTTPOptions,21E,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nx-amz-request-id:\x20D363755C97222EED\r\nx-amz-id-2:\
+SF:x20sEdLcVJfqoeS/20EPJFtqhrvJzK7HcV753la7rPblVMdPC31Eo9WPRBok0SjW9mwfQC/
+SF:XuKwo1s=\r\nContent-Type:\x20application/xml\r\nDate:\x20Fri,\x2013\x20
+SF:Sep\x202019\x2004:11:19\x20GMT\r\nConnection:\x20close\r\nServer:\x20Am
+SF:azonS3\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?>\n<Err
+SF:or><Code>BadRequest</Code><Message>Insufficient\x20information\.\x20Ori
+SF:gin\x20request\x20header\x20needed\.</Message><RequestId>D363755C97222E
+SF:ED</RequestId><HostId>sEdLcVJfqoeS/20EPJFtqhrvJzK7HcV753la7rPblVMdPC31E
+SF:o9WPRBok0SjW9mwfQC/XuKwo1s=</HostId></Error>")%r(FourOhFourRequest,234,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nx-amz-request-id:\x200CE8B0433AF
+SF:67849\r\nx-amz-id-2:\x20pCM5/SF2cLG4J00VLlPymDzp765PO45NpdO9hPlJkEuM0Cu
+SF:IlyNWo7aW4UEZ2Fx78\+OjEU\+VXl8=\r\nContent-Type:\x20application/xml\r\n
+SF:Date:\x20Fri,\x2013\x20Sep\x202019\x2004:11:21\x20GMT\r\nConnection:\x2
+SF:0close\r\nServer:\x20AmazonS3\r\n\r\n<\?xml\x20version=\"1\.0\"\x20enco
+SF:ding=\"UTF-8\"\?>\n<Error><Code>InvalidBucketName</Code><Message>The\x2
+SF:0specified\x20bucket\x20is\x20not\x20valid\.</Message><BucketName>nice\
+SF:x20ports,</BucketName><RequestId>0CE8B0433AF67849</RequestId><HostId>pC
+SF:M5/SF2cLG4J00VLlPymDzp765PO45NpdO9hPlJkEuM0CuIlyNWo7aW4UEZ2Fx78\+OjEU\+
+SF:VXl8=</HostId></Error>")%r(GenericLines,252,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0Request\r\nDate:\x20Fri,\x2013\x20Sep\x2019\x2004:11:28\x20GMT\r\nConn
+SF:ection:\x20close\r\nTransfer-Encoding:\x20chunked\r\nx-amz-id-2:\x20PMe
+SF:/OD89hgNLHraU6LZJZdO9/G5DQerTFwjCaRKC51Pa8MxHS6YrIDmPvJL6i/IKljeQchU7Pf
+SF:h8EsIiWtqZPCpjWOxx2UKf\r\nx-amz-request-id:\x201450DC63CEFE275F\r\nCont
+SF:ent-Type:\x20application/xml\r\n\r\n127\r\n<\?xml\x20version=\"1\.0\"\x
+SF:20encoding=\"UTF-8\"\?><Error><Code>BadRequest</Code><Message>An\x20err
+SF:or\x20occurred\x20when\x20parsing\x20the\x20HTTP\x20request\.</Message>
+SF:<RequestId>1450DC63CEFE275F</RequestId><HostId>PMe/OD89hgNLHraU6LZJZdO9
+SF:/G5DQerTFwjCaRKC51Pa8MxHS6YrIDmPvJL6i/IKljeQchU7Pfh8EsIiWtqZPCpjWOxx2UK
+SF:f</HostId></Error>\r\n0\r\n\r\n");
+
+Nmap scan report for edge.palantir.com (8.4.231.81)
+Host is up (0.086s latency).
+Not shown: 64434 closed ports, 1095 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+2222/tcp open  ssh                (protocol 2.0)
+5060/tcp open  sip                Tandberg-4136 VoIP server X8.11.3
+5061/tcp open  ssl/sip            Tandberg-4136 VoIP server X8.11.3
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+8443/tcp open  ssl/http           Cisco Expressway E
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B16E1%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for edge-eu.palantir.com (198.97.15.22)
+Host is up (0.087s latency).
+Not shown: 64419 closed ports, 1105 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+1720/tcp open  h323q931?
+2222/tcp open  ssh                (protocol 2.0)
+2776/tcp open  ridgeway1?
+2777/tcp open  ridgeway2?
+5060/tcp open  sip                Tandberg-4135 VoIP server X8.10.4
+5061/tcp open  ssl/sip            Tandberg-4135 VoIP server X8.10.4
+5222/tcp open  xmpp-client?
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+7400/tcp open  rtps-discovery?
+8443/tcp open  ssl/http           Cisco Expressway E
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B16E1%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for edge-use-a.palantir.com (198.97.14.81)
+Host is up (0.020s latency).
+Not shown: 64445 closed ports, 1080 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+1720/tcp open  h323q931?
+2222/tcp open  ssh                (protocol 2.0)
+2776/tcp open  ridgeway1?
+2777/tcp open  ridgeway2?
+5060/tcp open  sip                Tandberg-4135 VoIP server X8.10.1
+5061/tcp open  ssl/sip            Tandberg-4135 VoIP server X8.10.1
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+7400/tcp open  rtps-discovery?
+8443/tcp open  ssl/http           Cisco Expressway E
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B16EA%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for files.palantir.com (34.195.215.10)
+Host is up (0.011s latency).
+rDNS record for 34.195.215.10: ec2-34-195-215-10.compute-1.amazonaws.com
+Not shown: 65532 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     (protocol 2.0)
+80/tcp  open  http    Microsoft IIS httpd 10.0
+443/tcp open  ssl     Microsoft SChannel TLS
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=7.70%I=7%D=9/13%Time=5D7B16F3%P=x86_64-apple-darwin13.4.0%
+SF:r(NULL,15,"SSH-2\.0-9\.99\x20sshlib\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.70%I=7%D=9/13%Time=5D7B16F8%P=x86_64-apple-darwin13.4.0
+SF:%r(TLSSessionReq,D7D,"\x16\x03\x03\rx\x02\0\0M\x03\x03\]{\x16\xf3\xb7h\
+SF:xd2\xf4\x83\0\xde\xd6\xd0\x19\xbe\xa4\x9aI\xf6\xc2\xb4\xca\x9c\x15\xba\
+SF:xf3\x0c\xe5\xcf\xcc\x9eZ\x20\xb03\0\0\x08{6\x82\xaf=\xf9x\xa5u\xc0\x9bO
+SF:\xa0\xb6\xb7\xdc{\x83Yh\x18P\x01V\xbc\x7f\x11\x009\0\0\x05\xff\x01\0\x0
+SF:1\0\x0b\0\x08\x11\0\x08\x0e\0\x08\x0b0\x82\x08\x070\x82\x06\xef\xa0\x03
+SF:\x02\x01\x02\x02\x10\x0eAg9Q\x02\x87v\x20h\"S\*\x80\xd0\"0\r\x06\t\*\x8
+SF:6H\x86\xf7\r\x01\x01\x0b\x05\x000p1\x0b0\t\x06\x03U\x04\x06\x13\x02US1\
+SF:x150\x13\x06\x03U\x04\n\x13\x0cDigiCert\x20Inc1\x190\x17\x06\x03U\x04\x
+SF:0b\x13\x10www\.digicert\.com1/0-\x06\x03U\x04\x03\x13&DigiCert\x20SHA2\
+SF:x20High\x20Assurance\x20Server\x20CA0\x1e\x17\r180517000000Z\x17\r20052
+SF:0120000Z0\x81\x9d1\x0b0\t\x06\x03U\x04\x06\x13\x02US1\x130\x11\x06\x03U
+SF:\x04\x08\x13\nCalifornia1\x120\x10\x06\x03U\x04\x07\x13\tPalo\x20Alto1#
+SF:0!\x06\x03U\x04\n\x13\x1aPalantir\x20Technologies\x20Inc\.1#0!\x06\x03U
+SF:\x04\x0b\x13\x1aPalantir\x20Technologies\x20Inc\.1\x1b0\x19\x06\x03U\x0
+SF:4\x03\x13\x12files\.palantir\.com0\x82\x02\"0\r\x06\t\*\x86H\x86\xf7\r\
+SF:x01\x01\x01\x05\0\x03\x82\x02\x0f\x000\x82\x02\n\x02\x82\x02\x01\0\xed\
+SF:xf7/u\xd2\xcfF\xb4;\x1c\xb0\xeb\x883_\xe1W\xab\xa6\xa6h\xf7nx`\xef\xa1\
+SF:?\x07E7\[\xca\xd4k\x81\xeb\xbf1\|\xbamf\xfc\xbb\(S\x89\x1a\x1d\xa1m\^\x
+SF:d4\xe4\x97\xc3\xd3\x953\x04I\)\xe9\xb7\)\x19\x960\xb4X\xa3T\x01f\xbb\t\
+SF:x0fz\]\x01\xb3\x7f\xd5\x98\x18\xb99tYQ\xb3\xdaS\xfbJ\xe8\xfa\xd0A\xc0\x
+SF:9fa\xb4\x9e\xbb\x0f\)yw\xd8\xdf\x8d\xd2\xcf\xf8\xaa\xbeiz9\xb1\x86\|\x2
+SF:0{R\xbb\xa3\x8b\t\xc0\xf1\xf0\x92\xd6\xf3\xaa\xc2\x15\xcd%\x9c\xd7\x96\
+SF:xa0/\x85\x06\xec\xd7\xc9\xae\xdfriA\x86\x03\x17\xe0\x1cd\[\x1a\x98\x84\
+SF:xbf\xf9\0jU\xb0T\x89\xf7\tZ\x13\xff\x1a!\xaf\xc6\x15\^\x10ZC\x8a\x96\xd
+SF:1\xe1`x\xb4\xab\xe3<\xd9\xc5\x92a1\x85\xf7\xbd\xe1\xf6``\xb4\xef\x1f\x0
+SF:bpK\x9f\xcb\x08\x13\xe2\xc0\xd8\xe6\|\x8f3V\x19\|\xef\x8b\xd1\xe9\x92\x
+SF:87\xd8e\xd8\x9d\x92v\xa9Y\x06\xac\x8eI\xad\xd0\r\|\x93\xf9\xfa\xf1\xb1\
+SF:(Rl\xac\xd1n\x82\xc8\xc1\x1b\x88\x9b\r\xe6\xe8\xcc`\xa2Z#'\xd9\xe1\xa0@
+SF:r\xc7\x8bJ\xe7r\xd9\xacZ\xfe\$\xfc\xdd\xee\\n\x08\xcdJ\x85\xb6\xe0\x04!
+SF:\xa1\x89\xaaH\xab\(\xd4\xe6z\xf1\xac\xf4\xf1\x80\xb1\"\xdc\xc5'\x039\xb
+SF:6\xf9\x7f\xf5r\xa6\xa6\\\x89\x0b\xb2}5\xa1\x92\x18\xb4{\xda\x05B\?#\xae
+SF:w3\xb8\xd2\xc8IJ\xe1\xd4\x94\xd4\x13\*\x0f\x82A\xb3\x92ZN\x9c\x18\*\xe1
+SF:\x9aVu\x81\xeez4\xdcN\xb0T\xfe\+\xdf\x85\xdcB8=S\xedG\xc3\xecv\(\xc1\x8
+SF:8\xc6\xa8\x0f5\x87\x130\xef<\xe9\xebl4\xfa4");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for impact.palantir.com (151.101.200.230)
+Host is up (0.0095s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+
+Nmap scan report for input.palantir.com (8.4.231.71)
+Host is up (0.082s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache httpd
+443/tcp open  ssl/http Apache httpd
+Service Info: Hosts: input.palantir.com, sj-input-01.yojoe.local
+
+Nmap scan report for lon-ravpn.palantir.com (198.97.15.21)
+Host is up (0.083s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for regalia.palantir.com (34.248.203.195)
+Host is up (0.11s latency).
+Other addresses for regalia.palantir.com (not scanned): 34.248.156.76
+rDNS record for 34.248.203.195: ec2-34-248-203-195.eu-west-1.compute.amazonaws.com
+Not shown: 65534 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE VERSION
+655/tcp open  tinc?
+
+Nmap scan report for scoops.palantir.com (8.4.231.75)
+Host is up (0.082s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for sj-o365sentry.mi.palantir.com (8.4.231.74)
+Host is up (0.087s latency).
+Not shown: 65534 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http MobileIron Sentry
+
+Nmap scan report for sj-ravpn.palantir.com (8.4.231.80)
+Host is up (0.082s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for stackoverflow.palantir.com (3.213.107.230)
+Host is up (0.011s latency).
+Other addresses for stackoverflow.palantir.com (not scanned): 35.170.105.243
+rDNS record for 3.213.107.230: ec2-3-213-107-230.compute-1.amazonaws.com
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Microsoft-HTTPAPI/2.0
+443/tcp open  ssl/https Microsoft-HTTPAPI/2.0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.70%I=7%D=9/13%Time=5D7B16FF%P=x86_64-apple-darwin13.4.0%
+SF:r(GetRequest,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20
+SF:text/html;\x20charset=us-ascii\r\nDate:\x20Fri,\x2013\x20Sep\x202019\x2
+SF:004:11:43\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\.0\r\nContent-Length
+SF::\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20
+SF:\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/TR/html4/stri
+SF:ct\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\r\n<META\x20HTTP-
+SF:EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20charset=us-ascii\"></
+SF:HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x20Error\x20404\.\x
+SF:20The\x20requested\x20resource\x20is\x20not\x20found\.</p>\r\n</BODY></
+SF:HTML>\r\n")%r(HTTPOptions,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Fri,\x2013\x20S
+SF:ep\x202019\x2004:11:43\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\.0\r\nC
+SF:ontent-Length:\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x20HTML\
+SF:x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/
+SF:TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\r\n<
+SF:META\x20HTTP-EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20charset=
+SF:us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x20Err
+SF:or\x20404\.\x20The\x20requested\x20resource\x20is\x20not\x20found\.</p>
+SF:\r\n</BODY></HTML>\r\n")%r(RTSPRequest,42,"HTTP/1\.1\x20400\x20BAD_REQU
+SF:EST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n")%r(X11Prob
+SF:e,42,"HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnec
+SF:tion:\x20Close\r\n\r\n")%r(FourOhFourRequest,1EC,"HTTP/1\.1\x20404\x20N
+SF:ot\x20Found\r\nContent-Type:\x20text/html;\x20charset=us-ascii\r\nDate:
+SF:\x20Fri,\x2013\x20Sep\x202019\x2004:11:43\x20GMT\r\nServer:\x20Microsof
+SF:t-HTTPAPI/2\.0\r\nContent-Length:\x20315\r\nConnection:\x20Close\r\n\r\
+SF:n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"h
+SF:ttp://www\.w3\.org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x2
+SF:0Found</TITLE>\r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Content=\"tex
+SF:t/html;\x20charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\
+SF:n<hr><p>HTTP\x20Error\x20404\.\x20The\x20requested\x20resource\x20is\x2
+SF:0not\x20found\.</p>\r\n</BODY></HTML>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.70%T=SSL%I=7%D=9/13%Time=5D7B1705%P=x86_64-apple-darwin
+SF:13.4.0%r(GetRequest,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Ty
+SF:pe:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Fri,\x2013\x20Sep\x20
+SF:2019\x2004:11:49\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\.0\r\nContent
+SF:-Length:\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x20HTML\x20PUB
+SF:LIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/TR/htm
+SF:l4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\r\n<META\x
+SF:20HTTP-EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20charset=us-asc
+SF:ii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x20Error\x20
+SF:404\.\x20The\x20requested\x20resource\x20is\x20not\x20found\.</p>\r\n</
+SF:BODY></HTML>\r\n")%r(HTTPOptions,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\
+SF:r\nContent-Type:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Fri,\x20
+SF:13\x20Sep\x202019\x2004:11:49\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\
+SF:.0\r\nContent-Length:\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x
+SF:20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w
+SF:3\.org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITL
+SF:E>\r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20c
+SF:harset=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP
+SF:\x20Error\x20404\.\x20The\x20requested\x20resource\x20is\x20not\x20foun
+SF:d\.</p>\r\n</BODY></HTML>\r\n")%r(FourOhFourRequest,1EC,"HTTP/1\.1\x204
+SF:04\x20Not\x20Found\r\nContent-Type:\x20text/html;\x20charset=us-ascii\r
+SF:\nDate:\x20Fri,\x2013\x20Sep\x202019\x2004:11:49\x20GMT\r\nServer:\x20M
+SF:icrosoft-HTTPAPI/2\.0\r\nContent-Length:\x20315\r\nConnection:\x20Close
+SF:\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//
+SF:EN\"\"http://www\.w3\.org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE
+SF:>Not\x20Found</TITLE>\r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Conten
+SF:t=\"text/html;\x20charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found<
+SF:/h2>\r\n<hr><p>HTTP\x20Error\x20404\.\x20The\x20requested\x20resource\x
+SF:20is\x20not\x20found\.</p>\r\n</BODY></HTML>\r\n")%r(tor-versions,42,"H
+SF:TTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x
+SF:20Close\r\n\r\n");
+
+Nmap scan report for videos.palantir.com (38.74.193.98)
+Host is up (0.020s latency).
+Not shown: 65444 closed ports, 88 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Apache httpd
+443/tcp  open  ssl/ssl    Apache httpd (SSL-only mode)
+7373/tcp open  tcpwrapped
+
+Nmap scan report for palantirtech.com (151.101.192.230)
+Host is up (0.0100s latency).
+Other addresses for palantirtech.com (not scanned): 151.101.128.230 151.101.64.230 151.101.0.230
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+
+Nmap scan report for auth-east-lb.palantir.com (198.97.14.90)
+Host is up (0.018s latency).
+Not shown: 65532 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE  VERSION
+80/tcp    open  http     Microsoft IIS httpd 10.0
+443/tcp   open  ssl/http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49443/tcp open  unknown
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for cards.palantir.com (92.242.140.21)
+Host is up (0.038s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 64044 filtered ports, 1490 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Nmap scan report for edge-eu-a.palantir.com (198.97.15.22)
+Host is up (0.087s latency).
+Not shown: 64499 closed ports, 1025 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+1720/tcp open  h323q931?
+2222/tcp open  ssh                (protocol 2.0)
+2776/tcp open  ridgeway1?
+2777/tcp open  ridgeway2?
+5060/tcp open  sip                Tandberg-4135 VoIP server X8.10.4
+5061/tcp open  ssl/sip            Tandberg-4135 VoIP server X8.10.4
+5222/tcp open  xmpp-client?
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+7400/tcp open  rtps-discovery?
+8443/tcp open  ssl/http           Cisco Expressway E
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B1B63%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for edge-use.palantir.com (8.4.231.81)
+Host is up (0.087s latency).
+Not shown: 64504 closed ports, 1026 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+2222/tcp open  ssh                (protocol 2.0)
+5060/tcp open  sip                Tandberg-4136 VoIP server X8.11.3
+5061/tcp open  ssl/sip            Tandberg-4136 VoIP server X8.11.3
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B1B63%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for javadoc.palantir.com (8.4.231.73)
+Host is up (0.081s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.7.10
+443/tcp open  ssl/http nginx 1.7.10
+
+Nmap scan report for portal.palantir.com (198.97.14.80)
+Host is up (0.018s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for www.palantir.com (151.101.200.230)
+Host is up (0.0092s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+
+Nmap scan report for sj-ravpn.palantirtech.com (8.4.231.80)
+Host is up (0.084s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for auth-west-lb.palantir.com (198.97.14.90)
+Host is up (0.017s latency).
+Not shown: 65532 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE  VERSION
+80/tcp    open  http     Microsoft IIS httpd 10.0
+443/tcp   open  ssl/http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49443/tcp open  unknown
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for edge-usw.palantir.com (8.4.231.81)
+Host is up (0.088s latency).
+Not shown: 64504 closed ports, 1025 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+2222/tcp open  ssh                (protocol 2.0)
+5060/tcp open  sip                Tandberg-4136 VoIP server X8.11.3
+5061/tcp open  ssl/sip            Tandberg-4136 VoIP server X8.11.3
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+8443/tcp open  ssl/http           Cisco Expressway E
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B1EED%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for go.palantir.com (92.242.140.21)
+Host is up (0.035s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 63805 filtered ports, 1729 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Nmap scan report for vpn.palantir.com (198.97.14.80)
+Host is up (0.018s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for www.palantirtech.com (151.101.200.230)
+Host is up (0.0090s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     Varnish
+443/tcp open  ssl/http-proxy Varnish
+
+Nmap scan report for javadoc.palantirtech.com (8.4.231.73)
+Host is up (0.082s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.7.10
+443/tcp open  ssl/http nginx 1.7.10
+
+Nmap scan report for edge-usw-b.palantir.com (8.4.231.81)
+Host is up (0.087s latency).
+Not shown: 64495 closed ports, 1035 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+2222/tcp open  ssh                (protocol 2.0)
+5060/tcp open  sip                Tandberg-4136 VoIP server X8.11.3
+5061/tcp open  ssl/sip-tls?
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B21AF%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for support.palantir.com (92.242.140.21)
+Host is up (0.035s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 63818 filtered ports, 1716 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Nmap scan report for portal.palantirtech.com (198.97.14.80)
+Host is up (0.025s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for docs.palantirtech.com (8.4.231.73)
+Host is up (0.086s latency).
+Not shown: 65532 filtered ports, 1 closed port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.7.10
+443/tcp open  ssl/http nginx 1.7.10
+
+Nmap scan report for svcc-expwye-01.palantir.com (8.4.231.81)
+Host is up (0.094s latency).
+Not shown: 64503 closed ports, 1026 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE            VERSION
+2222/tcp open  ssh                (protocol 2.0)
+5060/tcp open  sip                Tandberg-4136 VoIP server X8.11.3
+5061/tcp open  ssl/sip            Tandberg-4136 VoIP server X8.11.3
+7001/tcp open  ssl/afs3-callback?
+7011/tcp open  ssl/talon-disc?
+8443/tcp open  ssl/http           Cisco Expressway E
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.70%I=7%D=9/13%Time=5D7B244E%P=x86_64-apple-darwin13.4.
+SF:0%r(NULL,B,"SSH-2\.0-X\r\n");
+Service Info: Device: VoIP adapter
+
+Nmap scan report for vpn.palantirtech.com (198.97.14.80)
+Host is up (0.020s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Nmap scan report for support.palantirtech.com (92.242.140.21)
+Host is up (0.037s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 63688 filtered ports, 1846 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Nmap scan report for dc-ravpn.palantirtech.com (198.97.14.80)
+Host is up (0.016s latency).
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Cisco ASA firewall http config
+443/tcp open  ssl/http Cisco ASA SSL VPN
+Service Info: Device: firewall
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 13 02:06:26 2019 -- 97 IP addresses (57 hosts up) scanned in 9839.46 seconds
