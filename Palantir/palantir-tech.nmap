@@ -1,0 +1,330 @@
+# Nmap 7.70 scan initiated Fri Sep 13 23:02:19 2019 as: nmap -sSV -p- --open -iL palantir-tech.txt -o palantir-tech
+Failed to resolve "admin.argo-canary.palantir.tech".
+Failed to resolve "admin.minivan-jira.staging.palantir.tech".
+Failed to resolve "argo-canary.palantir.tech".
+Failed to resolve "argo.staging.palantir.tech".
+Failed to resolve "consul.euw1-dmz.staging.palantir.tech".
+Failed to resolve "dmz.palantir.tech".
+Failed to resolve "dmz.staging.palantir.tech".
+Failed to resolve "euw1-dmz.staging.palantir.tech".
+Failed to resolve "external-logs.palantir.tech".
+Failed to resolve "external-logs.staging.palantir.tech".
+Failed to resolve "fabio.euw1-dmz.staging.palantir.tech".
+Failed to resolve "jamf.palantir.tech".
+Failed to resolve "kyree.staging.palantir.tech".
+Failed to resolve "magellan.staging.palantir.tech".
+Failed to resolve "mi.palantir.tech".
+Failed to resolve "mi.staging.palantir.tech".
+Failed to resolve "minivan-jira.staging.palantir.tech".
+Failed to resolve "nomad.euw1-dmz.staging.palantir.tech".
+Failed to resolve "tfe.staging.palantir.tech".
+Nmap scan report for evie.dmz.staging.palantir.tech (54.236.93.76)
+Host is up (0.0084s latency).
+Other addresses for evie.dmz.staging.palantir.tech (not scanned): 34.205.82.123
+rDNS record for 54.236.93.76: ec2-54-236-93-76.compute-1.amazonaws.com
+Not shown: 65534 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+443/tcp open  ssl/https
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.70%T=SSL%I=7%D=9/13%Time=5D7C59A4%P=x86_64-apple-darwin
+SF:13.4.0%r(HTTPOptions,1AC6,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x2
+SF:0Sat,\x2014\x20Sep\x202019\x2003:08:20\x20GMT\r\nContent-Type:\x20text/
+SF:html;\x20charset=utf-8\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
+SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
+SF:tions:\x20nosniff\r\nX-Request-Id:\x20288fca0b-097e-495c-b020-9009a4b4e
+SF:d88\r\nX-Runtime:\x200\.006737\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\
+SF:x20<head>\n\x20\x20\x20\x20<title>Evie\.ai\x20-\x20Your\x20Personal\x20
+SF:AI\x20Assistant</title>\n\x20\x20\x20\x20<meta\x20name=\"description\"\
+SF:x20content=\"Evie\x20is\x20an\x20AI\x20personal\x20assistant\x20that\x2
+SF:0schedules\x20and\x20organizes\x20your\x20meeting\x20according\x20to\x2
+SF:0your\x20calendar\x20preferences\.\"\x20/>\n\n\x20\x20\x20\x20<meta\x20
+SF:http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=UTF-8\"\
+SF:x20/>\n\x20\x20\x20\x20<meta\x20content=\"width=device-width,\x20maximu
+SF:m-scale=1\"\x20name=\"viewport\"\x20/>\n\x20\x20\x20\x20<meta\x20name=\
+SF:"application-name\"\x20content=\"evie\.ai\"\x20/>\n\x20\x20\x20\x20<lin
+SF:k\x20rel=\"shortcut\x20icon\"\x20href=\"https://evie-alb-1212504246\.us
+SF:-east-1\.elb\.amazonaws\.com/assets/favicon-fb0c6bbb28912383055f917ca9c
+SF:849bf3e26c3745c745e99ddfd2")%r(FourOhFourRequest,1AC6,"HTTP/1\.1\x20404
+SF:\x20Not\x20Found\r\nDate:\x20Sat,\x2014\x20Sep\x202019\x2003:08:20\x20G
+SF:MT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nConnection:\x20cl
+SF:ose\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mod
+SF:e=block\r\nX-Content-Type-Options:\x20nosniff\r\nX-Request-Id:\x2071847
+SF:1d9-dd17-475d-be08-68cbee2e5767\r\nX-Runtime:\x200\.006688\r\n\r\n<!DOC
+SF:TYPE\x20html>\n<html>\n\x20\x20<head>\n\x20\x20\x20\x20<title>Evie\.ai\
+SF:x20-\x20Your\x20Personal\x20AI\x20Assistant</title>\n\x20\x20\x20\x20<m
+SF:eta\x20name=\"description\"\x20content=\"Evie\x20is\x20an\x20AI\x20pers
+SF:onal\x20assistant\x20that\x20schedules\x20and\x20organizes\x20your\x20m
+SF:eeting\x20according\x20to\x20your\x20calendar\x20preferences\.\"\x20/>\
+SF:n\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"te
+SF:xt/html;\x20charset=UTF-8\"\x20/>\n\x20\x20\x20\x20<meta\x20content=\"w
+SF:idth=device-width,\x20maximum-scale=1\"\x20name=\"viewport\"\x20/>\n\x2
+SF:0\x20\x20\x20<meta\x20name=\"application-name\"\x20content=\"evie\.ai\"
+SF:\x20/>\n\x20\x20\x20\x20<link\x20rel=\"shortcut\x20icon\"\x20href=\"htt
+SF:ps://evie-alb-1212504246\.us-east-1\.elb\.amazonaws\.com/assets/favicon
+SF:-fb0c6bbb28912383055f917ca9c849bf3e26c3745c745e99ddfd2");
+
+Nmap scan report for fabio.general.dmz.palantir.tech (54.152.131.99)
+Host is up (0.0097s latency).
+Other addresses for fabio.general.dmz.palantir.tech (not scanned): 52.54.30.148
+rDNS record for 54.152.131.99: ec2-54-152-131-99.compute-1.amazonaws.com
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     awselb/2.0
+443/tcp open  ssl/http nginx 1.17.3
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.70%I=7%D=9/13%Time=5D7C599E%P=x86_64-apple-darwin13.4.0%
+SF:r(GetRequest,184,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x
+SF:20awselb/2\.0\r\nDate:\x20Sat,\x2014\x20Sep\x202019\x2003:08:14\x20GMT\
+SF:r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\
+SF:x20close\r\nLocation:\x20https://dmz-prod-gen-fabio-1063122731\.us-east
+SF:-1\.elb\.amazonaws\.com:443/\r\n\r\n<html>\r\n<head><title>301\x20Moved
+SF:\x20Permanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<cente
+SF:r><h1>301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n</html>\r
+SF:\n")%r(HTTPOptions,184,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nSer
+SF:ver:\x20awselb/2\.0\r\nDate:\x20Sat,\x2014\x20Sep\x202019\x2003:08:14\x
+SF:20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnec
+SF:tion:\x20close\r\nLocation:\x20https://dmz-prod-gen-fabio-1063122731\.u
+SF:s-east-1\.elb\.amazonaws\.com:443/\r\n\r\n<html>\r\n<head><title>301\x2
+SF:0Moved\x20Permanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n
+SF:<center><h1>301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n</h
+SF:tml>\r\n")%r(RTSPRequest,8A,"<html>\r\n<head><title>400\x20Bad\x20Reque
+SF:st</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>400\x20
+SF:Bad\x20Request</h1></center>\r\n</body>\r\n</html>\r\n")%r(X11Probe,120
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:
+SF:\x20Sat,\x2014\x20Sep\x202019\x2003:08:14\x20GMT\r\nContent-Type:\x20te
+SF:xt/html\r\nContent-Length:\x20138\r\nConnection:\x20close\r\n\r\n<html>
+SF:\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<body\x20bgcol
+SF:or=\"white\">\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</b
+SF:ody>\r\n</html>\r\n")%r(FourOhFourRequest,1A7,"HTTP/1\.1\x20301\x20Move
+SF:d\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Sat,\x2014\x20Se
+SF:p\x202019\x2003:08:14\x20GMT\r\nContent-Type:\x20text/html\r\nContent-L
+SF:ength:\x20150\r\nConnection:\x20close\r\nLocation:\x20https://dmz-prod-
+SF:gen-fabio-1063122731\.us-east-1\.elb\.amazonaws\.com:443/nice%20ports%2
+SF:C/Tri%6Eity\.txt%2ebak\r\n\r\n<html>\r\n<head><title>301\x20Moved\x20Pe
+SF:rmanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>
+SF:301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n</html>\r\n");
+
+Nmap scan report for global.mi.palantir.tech (54.174.149.24)
+Host is up (0.010s latency).
+Other addresses for global.mi.palantir.tech (not scanned): 3.208.153.141
+rDNS record for 54.174.149.24: ec2-54-174-149-24.compute-1.amazonaws.com
+Not shown: 65534 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE    VERSION
+443/tcp open  ssl/https?
+
+Nmap scan report for maestro-argonot.staging.palantir.tech (92.242.140.21)
+Host is up (0.035s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 63769 filtered ports, 1765 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Nmap scan report for reporter.palantir.tech (54.144.254.155)
+Host is up (0.011s latency).
+rDNS record for 54.144.254.155: ec2-54-144-254-155.compute-1.amazonaws.com
+Not shown: 65534 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http Microsoft IIS httpd 10.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for stackoverflow.palantir.tech (35.170.105.243)
+Host is up (0.011s latency).
+Other addresses for stackoverflow.palantir.tech (not scanned): 3.213.107.230
+rDNS record for 35.170.105.243: ec2-35-170-105-243.compute-1.amazonaws.com
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Microsoft-HTTPAPI/2.0
+443/tcp open  ssl/https Microsoft-HTTPAPI/2.0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.70%I=7%D=9/13%Time=5D7C5BAA%P=x86_64-apple-darwin13.4.0%
+SF:r(GetRequest,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20
+SF:text/html;\x20charset=us-ascii\r\nDate:\x20Sat,\x2014\x20Sep\x202019\x2
+SF:003:16:57\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\.0\r\nContent-Length
+SF::\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20
+SF:\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/TR/html4/stri
+SF:ct\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\r\n<META\x20HTTP-
+SF:EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20charset=us-ascii\"></
+SF:HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x20Error\x20404\.\x
+SF:20The\x20requested\x20resource\x20is\x20not\x20found\.</p>\r\n</BODY></
+SF:HTML>\r\n")%r(HTTPOptions,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Sat,\x2014\x20S
+SF:ep\x202019\x2003:16:58\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\.0\r\nC
+SF:ontent-Length:\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x20HTML\
+SF:x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/
+SF:TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\r\n<
+SF:META\x20HTTP-EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20charset=
+SF:us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x20Err
+SF:or\x20404\.\x20The\x20requested\x20resource\x20is\x20not\x20found\.</p>
+SF:\r\n</BODY></HTML>\r\n")%r(RTSPRequest,42,"HTTP/1\.1\x20400\x20BAD_REQU
+SF:EST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n")%r(X11Prob
+SF:e,42,"HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnec
+SF:tion:\x20Close\r\n\r\n")%r(FourOhFourRequest,1EC,"HTTP/1\.1\x20404\x20N
+SF:ot\x20Found\r\nContent-Type:\x20text/html;\x20charset=us-ascii\r\nDate:
+SF:\x20Sat,\x2014\x20Sep\x202019\x2003:16:57\x20GMT\r\nServer:\x20Microsof
+SF:t-HTTPAPI/2\.0\r\nContent-Length:\x20315\r\nConnection:\x20Close\r\n\r\
+SF:n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"h
+SF:ttp://www\.w3\.org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x2
+SF:0Found</TITLE>\r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Content=\"tex
+SF:t/html;\x20charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\
+SF:n<hr><p>HTTP\x20Error\x20404\.\x20The\x20requested\x20resource\x20is\x2
+SF:0not\x20found\.</p>\r\n</BODY></HTML>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.70%T=SSL%I=7%D=9/13%Time=5D7C5BB4%P=x86_64-apple-darwin
+SF:13.4.0%r(GetRequest,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Ty
+SF:pe:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Sat,\x2014\x20Sep\x20
+SF:2019\x2003:17:04\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\.0\r\nContent
+SF:-Length:\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x20HTML\x20PUB
+SF:LIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/TR/htm
+SF:l4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\r\n<META\x
+SF:20HTTP-EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20charset=us-asc
+SF:ii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x20Error\x20
+SF:404\.\x20The\x20requested\x20resource\x20is\x20not\x20found\.</p>\r\n</
+SF:BODY></HTML>\r\n")%r(HTTPOptions,1EC,"HTTP/1\.1\x20404\x20Not\x20Found\
+SF:r\nContent-Type:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Sat,\x20
+SF:14\x20Sep\x202019\x2003:17:08\x20GMT\r\nServer:\x20Microsoft-HTTPAPI/2\
+SF:.0\r\nContent-Length:\x20315\r\nConnection:\x20Close\r\n\r\n<!DOCTYPE\x
+SF:20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w
+SF:3\.org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITL
+SF:E>\r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20c
+SF:harset=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP
+SF:\x20Error\x20404\.\x20The\x20requested\x20resource\x20is\x20not\x20foun
+SF:d\.</p>\r\n</BODY></HTML>\r\n")%r(FourOhFourRequest,1EC,"HTTP/1\.1\x204
+SF:04\x20Not\x20Found\r\nContent-Type:\x20text/html;\x20charset=us-ascii\r
+SF:\nDate:\x20Sat,\x2014\x20Sep\x202019\x2003:17:08\x20GMT\r\nServer:\x20M
+SF:icrosoft-HTTPAPI/2\.0\r\nContent-Length:\x20315\r\nConnection:\x20Close
+SF:\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//
+SF:EN\"\"http://www\.w3\.org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE
+SF:>Not\x20Found</TITLE>\r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Conten
+SF:t=\"text/html;\x20charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found<
+SF:/h2>\r\n<hr><p>HTTP\x20Error\x20404\.\x20The\x20requested\x20resource\x
+SF:20is\x20not\x20found\.</p>\r\n</BODY></HTML>\r\n")%r(tor-versions,42,"H
+SF:TTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x
+SF:20Close\r\n\r\n");
+
+Nmap scan report for status.palantir.tech (99.84.104.72)
+Host is up (0.011s latency).
+Other addresses for status.palantir.tech (not scanned): 99.84.104.22 99.84.104.103 99.84.104.18
+rDNS record for 99.84.104.72: server-99-84-104-72.iad79.r.cloudfront.net
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Amazon CloudFront httpd
+443/tcp open  ssl/http Amazon CloudFront httpd
+
+Nmap scan report for status.staging.palantir.tech (13.32.238.196)
+Host is up (0.015s latency).
+Other addresses for status.staging.palantir.tech (not scanned): 13.32.238.40 13.32.238.242 13.32.238.102
+rDNS record for 13.32.238.196: server-13-32-238-196.phl50.r.cloudfront.net
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Amazon CloudFront httpd
+443/tcp open  ssl/http Amazon CloudFront httpd
+
+Nmap scan report for vdi.palantir.tech (35.153.224.189)
+Host is up (0.010s latency).
+rDNS record for 35.153.224.189: ec2-35-153-224-189.compute-1.amazonaws.com
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http       Citrix NetScaler https redirect
+443/tcp open  ssl/https?
+Service Info: Device: load balancer
+
+Nmap scan report for vdi.staging.palantir.tech (52.22.211.7)
+Host is up (0.013s latency).
+rDNS record for 52.22.211.7: ec2-52-22-211-7.compute-1.amazonaws.com
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http       Citrix NetScaler https redirect
+443/tcp open  ssl/https?
+Service Info: Device: load balancer
+
+Nmap scan report for maestro.staging.palantir.tech (92.242.140.21)
+Host is up (0.036s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 63915 filtered ports, 1619 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Nmap scan report for statuspage-redirect-prod.dmz.palantir.tech (99.84.104.72)
+Host is up (0.010s latency).
+Other addresses for statuspage-redirect-prod.dmz.palantir.tech (not scanned): 99.84.104.22 99.84.104.103 99.84.104.18
+rDNS record for 99.84.104.72: server-99-84-104-72.iad79.r.cloudfront.net
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Amazon CloudFront httpd
+443/tcp open  ssl/https CloudFront
+
+Nmap scan report for statuspage-redirect-staging.dmz.staging.palantir.tech (13.32.238.196)
+Host is up (0.016s latency).
+Other addresses for statuspage-redirect-staging.dmz.staging.palantir.tech (not scanned): 13.32.238.40 13.32.238.242 13.32.238.102
+rDNS record for 13.32.238.196: server-13-32-238-196.phl50.r.cloudfront.net
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Amazon CloudFront httpd
+443/tcp open  ssl/https CloudFront
+
+Nmap scan report for www.general.dmz.palantir.tech (54.152.131.99)
+Host is up (0.012s latency).
+Other addresses for www.general.dmz.palantir.tech (not scanned): 52.54.30.148
+rDNS record for 54.152.131.99: ec2-54-152-131-99.compute-1.amazonaws.com
+Not shown: 65533 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     awselb/2.0
+443/tcp open  ssl/http nginx 1.17.3
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.70%I=7%D=9/13%Time=5D7C5D8F%P=x86_64-apple-darwin13.4.0%
+SF:r(GetRequest,184,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x
+SF:20awselb/2\.0\r\nDate:\x20Sat,\x2014\x20Sep\x202019\x2003:25:03\x20GMT\
+SF:r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\
+SF:x20close\r\nLocation:\x20https://dmz-prod-gen-fabio-1063122731\.us-east
+SF:-1\.elb\.amazonaws\.com:443/\r\n\r\n<html>\r\n<head><title>301\x20Moved
+SF:\x20Permanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<cente
+SF:r><h1>301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n</html>\r
+SF:\n")%r(HTTPOptions,184,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nSer
+SF:ver:\x20awselb/2\.0\r\nDate:\x20Sat,\x2014\x20Sep\x202019\x2003:25:03\x
+SF:20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnec
+SF:tion:\x20close\r\nLocation:\x20https://dmz-prod-gen-fabio-1063122731\.u
+SF:s-east-1\.elb\.amazonaws\.com:443/\r\n\r\n<html>\r\n<head><title>301\x2
+SF:0Moved\x20Permanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n
+SF:<center><h1>301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n</h
+SF:tml>\r\n")%r(RTSPRequest,8A,"<html>\r\n<head><title>400\x20Bad\x20Reque
+SF:st</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>400\x20
+SF:Bad\x20Request</h1></center>\r\n</body>\r\n</html>\r\n")%r(X11Probe,120
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:
+SF:\x20Sat,\x2014\x20Sep\x202019\x2003:25:03\x20GMT\r\nContent-Type:\x20te
+SF:xt/html\r\nContent-Length:\x20138\r\nConnection:\x20close\r\n\r\n<html>
+SF:\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<body\x20bgcol
+SF:or=\"white\">\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</b
+SF:ody>\r\n</html>\r\n")%r(FourOhFourRequest,1A7,"HTTP/1\.1\x20301\x20Move
+SF:d\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Sat,\x2014\x20Se
+SF:p\x202019\x2003:25:03\x20GMT\r\nContent-Type:\x20text/html\r\nContent-L
+SF:ength:\x20150\r\nConnection:\x20close\r\nLocation:\x20https://dmz-prod-
+SF:gen-fabio-1063122731\.us-east-1\.elb\.amazonaws\.com:443/nice%20ports%2
+SF:C/Tri%6Eity\.txt%2ebak\r\n\r\n<html>\r\n<head><title>301\x20Moved\x20Pe
+SF:rmanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>
+SF:301\x20Moved\x20Permanently</h1></center>\r\n</body>\r\n</html>\r\n");
+
+Nmap scan report for patchwork.staging.palantir.tech (92.242.140.21)
+Host is up (0.040s latency).
+rDNS record for 92.242.140.21: unallocated.barefruit.co.uk
+Not shown: 64089 filtered ports, 1445 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 13 23:27:01 2019 -- 173 IP addresses (16 hosts up) scanned in 1482.68 seconds
