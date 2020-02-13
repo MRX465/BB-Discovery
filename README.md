@@ -1,5 +1,5 @@
 # BB-Discovery
-host discovery &amp; enumeration several programs
+host discovery &amp; enumeration for several BugBounty programs.
 
 ATT - https://hackerone.com/att  
 Yahoo / VZM - https://hackerone.com/verizonmedia  
